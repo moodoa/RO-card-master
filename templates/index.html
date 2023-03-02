@@ -1,0 +1,8 @@
+{% extends "base.html" %}
+
+{% block div %}
+        <form action="/startgame" method="POST">
+            <input type="text", name="your_name"", placeholder="your name">
+            <input type="submit", value="start">
+        </form>
+{% endblock %}

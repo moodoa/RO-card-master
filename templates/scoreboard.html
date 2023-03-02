@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block div %}
+    <h3>{{ score }} points</h3>
+    <br>
+    <br>
+    <h3>LeaderBoard</h3>
+    {% for info in infos %}
+    <tr>
+        <td><h3>{{info.name}} / {{info.score}} </h3></td>
+        <br>
+    </tr>
+    {% endfor %}
+    <a href="/">play again</a>
+{% endblock %}
